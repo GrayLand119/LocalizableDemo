@@ -4,6 +4,8 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>LocalizableDemo</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -12,16 +14,6 @@
 	<string>6.0</string>
 	<key>CFBundleName</key>
 	<string>$(PRODUCT_NAME)</string>
-	<key>CFBundleDisplayName</key>
-	<string>LocalizableDemo</string>
-	<key>NSLocationUsageDescription</key>
-	<string>Privacy location desc...</string>
-	<key>NSCameraUsageDescription</key>
-	<string>Privacy Camera desc...</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Privacy Photo desc...</string>
-	<key>NSBluetoothPeripheralUsageDescription</key>
-	<string>Privacy Bluetooth desc...</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
@@ -32,6 +24,14 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>Privacy Bluetooth desc...</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Privacy Camera desc...</string>
+	<key>NSLocationUsageDescription</key>
+	<string>Privacy location desc...</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Privacy Photo desc...</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -43,8 +43,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>

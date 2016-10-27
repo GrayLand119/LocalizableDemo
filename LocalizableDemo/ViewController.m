@@ -23,12 +23,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateTitle) name:kNoticeLanguageChange object:nil];
     
     [self initLanguage];
     
     [self updateTitle];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateTitle) name:kNoticeLanguageChange object:nil];
 }
 
 - (void)dealloc
@@ -52,7 +51,8 @@
 
 - (void)initLanguage
 {
-    [[GLLanguageManager defaultManager] changeLanguageType:GLLanguageTypeChineseSimple];
+    [GLLanguageManager defaultManager];
+//    [[GLLanguageManager defaultManager] changeLanguageType:GLLanguageTypeChineseSimple];
 //    [[LanguageManager defaultManager] changeLanguage:@"en"];
 }
 

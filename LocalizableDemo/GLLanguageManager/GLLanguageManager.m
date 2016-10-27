@@ -57,6 +57,12 @@ static NSString * const kLanguageSet = @"kLanguageSet";
     self.languageString = tempStr;
     path = [[NSBundle mainBundle] pathForResource:self.languageString ofType:kProj];
     self.bundle = [NSBundle bundleWithPath:path];
+    
+    if ([self.languageString isEqualToString:kCH]) {
+        _languageType = GLLanguageTypeChineseSimple;
+    }else if ([self.languageString isEqualToString:kEN]) {
+        _languageType = GLLanguageTypeEnglish;
+    }
 }
 
 - (void)changeLanguageType:(GLLanguageType)type;
