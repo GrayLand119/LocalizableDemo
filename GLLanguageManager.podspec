@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name = 'GLLanguageManager'
   s.version = '0.0.1'
-  s.license = 'MIT'
+  s.license =  { :type => "MIT", :file => "LICENSE" }
   s.summary = 'app国际化语言管理工具,可在app内切换语言'
   s.homepage = 'https://github.com/GrayLand119/LocalizableDemo'
   s.authors = { 'GrayLand' => '441726442@qq.com' }

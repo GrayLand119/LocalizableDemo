@@ -1,0 +1,10 @@
+PODS:
+  - GLLanguageManager (0.0.1)
+
+DEPENDENCIES:
+  - GLLanguageManager
+
+SPEC CHECKSUMS:
+  GLLanguageManager: d43ab99263af1e01932998fcdca5876c793a46b8
+
+COCOAPODS: 0.39.0
