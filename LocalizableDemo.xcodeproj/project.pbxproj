@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C302AF751DC201F500D2EF08 /* GLLanguageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C302AF721DC201F500D2EF08 /* GLLanguageManager.m */; };
 		C3932C531D9E010300225834 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3932C521D9E010300225834 /* main.m */; };
 		C3932C561D9E010300225834 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3932C551D9E010300225834 /* AppDelegate.m */; };
 		C3932C591D9E010300225834 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3932C581D9E010300225834 /* ViewController.m */; };
@@ -20,6 +19,7 @@
 		C3932C9D1D9E088F00225834 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C3932C9C1D9E088F00225834 /* Info.plist */; };
 		C3932CA01D9E08BE00225834 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3932CA21D9E08BE00225834 /* InfoPlist.strings */; };
 		C3932CA91D9E407C00225834 /* ChangeLanguageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3932CA81D9E407C00225834 /* ChangeLanguageViewController.m */; };
+		C39399041DC9EDC90017FBF4 /* GLLanguageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C39399031DC9EDC90017FBF4 /* GLLanguageManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +40,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C302AF711DC201F500D2EF08 /* GLLanguageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLLanguageManager.h; sourceTree = "<group>"; };
-		C302AF721DC201F500D2EF08 /* GLLanguageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLLanguageManager.m; sourceTree = "<group>"; };
 		C3932C4E1D9E010300225834 /* LocalizableDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalizableDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3932C521D9E010300225834 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C3932C541D9E010300225834 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -68,6 +66,8 @@
 		C3932CA31D9E08BF00225834 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		C3932CA71D9E407C00225834 /* ChangeLanguageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeLanguageViewController.h; sourceTree = "<group>"; };
 		C3932CA81D9E407C00225834 /* ChangeLanguageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeLanguageViewController.m; sourceTree = "<group>"; };
+		C39399021DC9EDC90017FBF4 /* GLLanguageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLLanguageManager.h; sourceTree = "<group>"; };
+		C39399031DC9EDC90017FBF4 /* GLLanguageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLLanguageManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,15 +95,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C302AF701DC201F500D2EF08 /* GLLanguageManager */ = {
-			isa = PBXGroup;
-			children = (
-				C302AF711DC201F500D2EF08 /* GLLanguageManager.h */,
-				C302AF721DC201F500D2EF08 /* GLLanguageManager.m */,
-			);
-			path = GLLanguageManager;
-			sourceTree = "<group>";
-		};
 		C3932C451D9E010300225834 = {
 			isa = PBXGroup;
 			children = (
@@ -128,7 +119,7 @@
 		C3932C501D9E010300225834 /* LocalizableDemo */ = {
 			isa = PBXGroup;
 			children = (
-				C302AF701DC201F500D2EF08 /* GLLanguageManager */,
+				C39399011DC9EDC90017FBF4 /* GLLanguageManager */,
 				C3932C841D9E027E00225834 /* Resources */,
 				C3932C541D9E010300225834 /* AppDelegate.h */,
 				C3932C551D9E010300225834 /* AppDelegate.m */,
@@ -178,6 +169,15 @@
 				C3932CA21D9E08BE00225834 /* InfoPlist.strings */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		C39399011DC9EDC90017FBF4 /* GLLanguageManager */ = {
+			isa = PBXGroup;
+			children = (
+				C39399021DC9EDC90017FBF4 /* GLLanguageManager.h */,
+				C39399031DC9EDC90017FBF4 /* GLLanguageManager.m */,
+			);
+			path = GLLanguageManager;
 			sourceTree = "<group>";
 		};
 		CE80C674E83140E5693DF63F /* Frameworks */ = {
@@ -321,7 +321,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C302AF751DC201F500D2EF08 /* GLLanguageManager.m in Sources */,
+				C39399041DC9EDC90017FBF4 /* GLLanguageManager.m in Sources */,
 				C3932C591D9E010300225834 /* ViewController.m in Sources */,
 				C3932C561D9E010300225834 /* AppDelegate.m in Sources */,
 				C3932C531D9E010300225834 /* main.m in Sources */,
