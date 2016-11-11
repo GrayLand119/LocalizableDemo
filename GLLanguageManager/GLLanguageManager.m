@@ -17,7 +17,6 @@ static NSString * const kLanguageSet = @"kLanguageSet";
 @interface GLLanguageManager()
 
 @property (nonatomic, strong) NSBundle *bundle;
-@property (nonatomic, assign, getter=currentLanguageType) GLLanguageType languageType;
 @property (nonatomic, strong) NSString *languageString;
 
 @end
