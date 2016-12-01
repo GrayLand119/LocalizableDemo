@@ -17,7 +17,6 @@ static NSString * const kLanguageSet = @"kLanguageSet";
 @interface GLLanguageManager()
 
 @property (nonatomic, strong) NSBundle *bundle;
-@property (nonatomic, assign, getter=currentLanguageType) GLLanguageType languageType;
 @property (nonatomic, strong) NSString *languageString;
 
 @end
@@ -51,10 +50,20 @@ static NSString * const kLanguageSet = @"kLanguageSet";
     NSString *path;
     
     if (!tempStr) {
-        tempStr = kEN;
+        NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
+        NSArray * allLanguages    = [defaults objectForKey:@"AppleLanguages"];
+        NSString * preferredLang  = [allLanguages objectAtIndex:0];
+        
+        if ([preferredLang rangeOfString:@"zh"].length) {
+            tempStr = kCH;
+        }else{
+            tempStr = kEN;
+        }
+        
     }
     
     self.languageString = tempStr;
+    
     path = [[NSBundle mainBundle] pathForResource:self.languageString ofType:kProj];
     self.bundle = [NSBundle bundleWithPath:path];
     

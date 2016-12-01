@@ -21,6 +21,8 @@ typedef NS_ENUM(NSUInteger, GLLanguageType) {
 
 @interface GLLanguageManager : NSObject
 
+@property (nonatomic, assign, getter=currentLanguageType) GLLanguageType languageType;
+
 + (instancetype)defaultManager;
 
 - (void)changeLanguageType:(GLLanguageType)type;
